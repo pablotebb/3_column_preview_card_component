@@ -1,0 +1,107 @@
+@use "variables";
+@use "initial";
+@use "mixins";
+@use "footer";
+
+.section-container {
+  // border: 1px solid black;
+  width: 344px;
+  height: 1331px;
+  margin: 100px auto 72px;
+}
+
+.article-sedans {
+  @include mixins.card(variables.$Bright-orange, "up");
+  &__picture {
+    @include mixins.picture;
+  }
+  &__title {
+    @include mixins.title();
+  }
+  &__description {
+    @include mixins.paragraph;
+  }
+  &__button {
+    @include mixins.button(variables.$Bright-orange);
+  }
+}
+
+.article-suvs {
+  @include mixins.card(variables.$Dark-cyan);
+  &__picture {
+    @include mixins.picture;
+  }
+  &__title {
+    @include mixins.title();
+  }
+  &__description {
+    @include mixins.paragraph;
+  }
+  &__button {
+    @include mixins.button(variables.$Dark-cyan);
+  }
+}
+
+.article-luxury {
+  @include mixins.card(variables.$Very-dark-cyan, "down");
+  &__picture {
+    @include mixins.picture;
+  }
+  &__title {
+    @include mixins.title();
+  }
+  &__description {
+    @include mixins.paragraph;
+  }
+  &__button {
+    @include mixins.button(variables.$Very-dark-cyan);
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-container {
+    // border: 1px solid red;
+    width: 932px;
+    height: 560px;
+    display: flex;
+    margin: 170px auto;
+  }
+  .article-sedans {
+    @include mixins.card(variables.$Bright-orange, "left");
+    height: 100%;
+    &__picture {
+      @include mixins.picture(true);
+    }
+    &__title {
+      @include mixins.title(true);
+    }
+    &__description {
+      @include mixins.paragraph(true);
+    }
+  }
+  .article-suvs {
+    height: 100%;
+    &__picture {
+      @include mixins.picture(true);
+    }
+    &__title {
+      @include mixins.title(true);
+    }
+    &__description {
+      @include mixins.paragraph(true);
+    }
+  }
+  .article-luxury {
+    @include mixins.card(variables.$Bright-orange, "right");
+    height: 100%;
+    &__picture {
+      @include mixins.picture(true);
+    }
+    &__title {
+      @include mixins.title(true);
+    }
+    &__description {
+      @include mixins.paragraph(true);
+    }
+  }
+}

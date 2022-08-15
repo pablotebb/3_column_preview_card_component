@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.section-container {
+  width: 344px;
+  height: 1331px;
+  margin: 100px auto 72px;
+}
+
+.article-sedans {
+  padding: 45px 53px 46px 48px;
+  background-color: hsl(31deg, 77%, 52%);
+  height: 473px;
+  border-radius: 10px 10px 0 0;
+}
+.article-sedans__picture {
+  width: 62px;
+  height: 42px;
+  margin-bottom: 40px;
+}
+.article-sedans__title {
+  font-size: 2.66em;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+.article-sedans__description {
+  font-size: 1em;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 25px;
+  height: 160px;
+  padding-right: 10px;
+}
+.article-sedans__button {
+  display: block;
+  width: 147px;
+  height: 47px;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 14px 26px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: hsl(31deg, 77%, 52%);
+}
+.article-sedans__button:hover {
+  border: 3px solid hsl(0deg, 0%, 95%);
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+  padding: 11px 26px;
+}
+
+.article-suvs {
+  padding: 45px 53px 46px 48px;
+  background-color: hsl(184deg, 100%, 22%);
+  height: 473px;
+}
+.article-suvs__picture {
+  width: 62px;
+  height: 42px;
+  margin-bottom: 40px;
+}
+.article-suvs__title {
+  font-size: 2.66em;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+.article-suvs__description {
+  font-size: 1em;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 25px;
+  height: 160px;
+  padding-right: 10px;
+}
+.article-suvs__button {
+  display: block;
+  width: 147px;
+  height: 47px;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 14px 26px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: hsl(184deg, 100%, 22%);
+}
+.article-suvs__button:hover {
+  border: 3px solid hsl(0deg, 0%, 95%);
+  background-color: hsl(184deg, 100%, 22%);
+  color: hsl(0deg, 0%, 95%);
+  padding: 11px 26px;
+}
+
+.article-luxury {
+  padding: 45px 53px 46px 48px;
+  background-color: hsl(179deg, 100%, 13%);
+  height: 473px;
+  border-radius: 0 0 10px 10px;
+}
+.article-luxury__picture {
+  width: 62px;
+  height: 42px;
+  margin-bottom: 40px;
+}
+.article-luxury__title {
+  font-size: 2.66em;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+.article-luxury__description {
+  font-size: 1em;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 25px;
+  height: 160px;
+  padding-right: 10px;
+}
+.article-luxury__button {
+  display: block;
+  width: 147px;
+  height: 47px;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 14px 26px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: hsl(179deg, 100%, 13%);
+}
+.article-luxury__button:hover {
+  border: 3px solid hsl(0deg, 0%, 95%);
+  background-color: hsl(179deg, 100%, 13%);
+  color: hsl(0deg, 0%, 95%);
+  padding: 11px 26px;
+}
+
+@media (min-width: 1440px) {
+  .section-container {
+    width: 932px;
+    height: 560px;
+    display: flex;
+    margin: 170px auto;
+  }
+  .article-sedans {
+    padding: 45px 53px 46px 48px;
+    background-color: hsl(31deg, 77%, 52%);
+    height: 473px;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+  }
+  .article-sedans__picture {
+    width: 80px;
+    height: 50px;
+  }
+  .article-sedans__title {
+    font-size: 3.66em;
+  }
+  .article-sedans__description {
+    font-size: 1em;
+    color: hsla(0deg, 0%, 100%, 0.75);
+    line-height: 25px;
+    height: 222px;
+    padding-right: 0;
+  }
+  .article-suvs {
+    height: 100%;
+  }
+  .article-suvs__picture {
+    width: 80px;
+    height: 50px;
+  }
+  .article-suvs__title {
+    font-size: 3.66em;
+  }
+  .article-suvs__description {
+    font-size: 1em;
+    color: hsla(0deg, 0%, 100%, 0.75);
+    line-height: 25px;
+    height: 222px;
+    padding-right: 0;
+  }
+  .article-luxury {
+    padding: 45px 53px 46px 48px;
+    background-color: hsl(31deg, 77%, 52%);
+    height: 473px;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+  }
+  .article-luxury__picture {
+    width: 80px;
+    height: 50px;
+  }
+  .article-luxury__title {
+    font-size: 3.66em;
+  }
+  .article-luxury__description {
+    font-size: 1em;
+    color: hsla(0deg, 0%, 100%, 0.75);
+    line-height: 25px;
+    height: 222px;
+    padding-right: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

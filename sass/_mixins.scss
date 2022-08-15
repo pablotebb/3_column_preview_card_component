@@ -1,0 +1,83 @@
+@use "variables";
+
+@mixin card($color: unset, $position: unset) {
+  padding: 45px 53px 46px 48px;
+  background-color: $color;
+  height: 473px;
+  @if ($position == "up") {
+    // mobile
+    border-radius: 10px 10px 0 0;
+  } @else if ($position == "down") {
+    // mobile
+    border-radius: 0 0 10px 10px;
+  } @else if ($position == "left") {
+    // desktop
+    border-radius: 10px 0 0 10px;
+  } @else if ($position == "right") {
+    // desktop
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+@mixin picture($desktop: false) {
+  // border: 8px solid yellow;
+  @if ($desktop == true) {
+    // desktop
+    width: 80px;
+    height: 50px;
+  } @else {
+    // mobile
+    width: 62px;
+    height: 42px;
+    margin-bottom: 40px;
+  }
+}
+
+@mixin title($desktop: false) {
+  @if ($desktop == true) {
+    // desktop
+    font-size: 3.66em;
+  } @else {
+    // mobile
+    font-size: 2.66em;
+    font-family: variables.$Font-family;
+    color: variables.$Very-light-gray;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+  }
+}
+
+@mixin paragraph($desktop: false) {
+  // border: 1px solid red;
+  font-size: 1em;
+  color: variables.$Transparent-white;
+  line-height: 25px;
+  @if ($desktop == true) {
+    // desktop
+    height: 222px;
+    padding-right: 0;
+    // border: 1px solid red;
+  } @else {
+    // mobile
+    height: 160px;
+    padding-right: 10px;
+  }
+}
+
+@mixin button($color: unset) {
+  // border: 1px solid black;
+  display: block;
+  width: 147px;
+  height: 47px;
+  background-color: variables.$Very-light-gray;
+  padding: 14px 26px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: $color;
+  &:hover {
+    border: 3px solid variables.$Very-light-gray;
+    background-color: $color;
+    color: variables.$Very-light-gray;
+    padding: 11px 26px;
+  }
+}
